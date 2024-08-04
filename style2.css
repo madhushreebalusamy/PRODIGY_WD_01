@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+/* Header Styles */
+header {
+    background-color: #3e2723;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header is above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1em;
+    margin-right: 75px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    border: solid 2px #bdada9;
+    background-color: #bdada9;
+    box-shadow: 0 4px 8px rgba(11, 12, 13, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ad3757;
+    background-color: rgb(242, 236, 238);
+    transform: scale(1.05);
+    animation: blink 1s infinite;
+}
+
+/* Blink Animation */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+#home {
+    position: relative;
+    background-color: #bdada9;
+    margin: 0;
+    min-height: 70vh; /* Ensures the section takes the full height of the viewport */
+    text-align: center; /* Center-aligns the text */
+}
+
+#home h1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#home span {
+    font-size: 170%;
+    text-shadow: 2px 3px #6c443d;
+    
+}
+#home p{
+    position: absolute;
+    color: #3e2723;
+    top: 55%;
+    left: 20%;
+    text-shadow: 1px 2px #c78787;
+}
+
+#home img{
+    margin-left: 20cm;
+    margin-top: 3cm;
+    margin-bottom: 3cm;
+}
+
+section {
+    margin-bottom: 2em;
+    min-height: 70vh;
+}
+
+h2 {
+    color: #3e2723;
+    margin-left: 10px;
+    text-shadow: 1px 2px #c78787;
+    font-size: xx-large;
+}
+
+#about p {
+    position: absolute;
+    margin: 7% 5% 5% 48%;
+    line-height: 0.8cm;
+    padding: 1em;
+    border: 3px solid #584141;
+    box-shadow: 2px 5px #ae8585;
+    font-family: cursive;
+}
+
+/* Chocolate Section Styles */
+#chocolates {
+    background-color: #f0e5d8;
+    padding: 2em;
+    text-align: center;
+}
+
+.chocolate {
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid #ddd;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.chocolate:hover {
+    transform: scale(1.05);
+    background-color: #f7f3e9;
+}
+
+.chocolate img {
+    width: 12cm;
+    height: 10cm;
+    border-radius: 10px;
+}
+
+.chocolate h3 {
+    color: #3e2723;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+.chocolate p {
+    color: #6c443d;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+#images {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact div {
+    margin: 2cm 10cm 1cm 15cm;
+}
+
+.ending {
+    color: #3e2723;
+    text-align: center;
+    text-shadow: 1px 2px #c78787;
+    font-size: xx-large;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Add some top margin to the main content to avoid it being hidden behind the fixed header */
+main {
+    padding-top: 80px; /* Adjust based on the height of the header */
+}
